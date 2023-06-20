@@ -1,0 +1,17 @@
+cover {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family: "CustomFont";
+  src: url("");
+} */
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
