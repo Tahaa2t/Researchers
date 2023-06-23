@@ -30,7 +30,6 @@ const LoginForm = () => {
 
         <div className={popupStyle}>
           <h3>LOGIN FAILED</h3>
-          <p>username or password incorrect</p>
         </div>
       
       

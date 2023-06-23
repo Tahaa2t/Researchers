@@ -28,10 +28,7 @@ const LoginForm = () => {
           <p>Remember me?</p>
         </div>
 
-        <div className={popupStyle}>
-          <h3>LOGIN FAILED</h3>
-          <p>username or password incorrect</p>
-        </div>
+        <div className={popupStyle}></div>
       
       
       </div>
