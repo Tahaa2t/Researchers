@@ -79,9 +79,9 @@ input[type=password]{
   position: relative;
   top: -1.5em;
 }
-.line{
-  text-decoration: underline;
-  color: black;
+
+input:focus {
+  border-color: rgb(140, 186, 222);
 }
 
 .login-btn {

@@ -79,10 +79,6 @@ input[type=password]{
   position: relative;
   top: -1.5em;
 }
-.line{
-  text-decoration: underline;
-  color: black;
-}
 
 .login-btn {
   width: 12em;
@@ -99,6 +95,9 @@ input[type=password]{
 }
 .login-btn:hover {
   transform: scale(1.15);
+}
+input:focus {
+  border: rgb(6, 106, 183);
 }
 
 .check-btn {

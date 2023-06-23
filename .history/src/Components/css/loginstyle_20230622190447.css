@@ -63,7 +63,8 @@ input[type=text]{
   /* outline-color: rgb(6, 106, 183); */
   height: 3em;
   width: 40%;
-  /* bottom: -1.5em; */
+  position: relative;
+  bottom: -1.5em;
 }
 
 
@@ -76,16 +77,10 @@ input[type=password]{
   /* outline-color: rgb(6, 106, 183); */
   height: 3em;
   width: 40%;
-  position: relative;
-  top: -1.5em;
-}
-.line{
-  text-decoration: underline;
-  color: black;
 }
 
 .login-btn {
-  width: 12em;
+  width: 40%;
   height: 3em;
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
@@ -103,7 +98,7 @@ input[type=password]{
 
 .check-btn {
   position: relative;
-  bottom: 2em;
+  bottom: 3em;
 }
 
 .check-btn input {

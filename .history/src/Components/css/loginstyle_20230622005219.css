@@ -8,13 +8,6 @@ display: flex;
   justify-content: center;
   align-items: center;
 
-
-
---- neechay ya uper se qareeb krna ho tou---
-.check-btn {
-  position: relative;
-  bottom: 3em;
-}
 */
 
 
@@ -34,12 +27,12 @@ display: flex;
 }
 
 .cover {
-  background-image: linear-gradient(rgba(178, 209, 233, 1), rgba(178, 209, 233, 0));
-  width: 40em;
+  background-image: linear-gradient(to down, rgb(178, 209, 233), rgb(250, 176, 227));
+  width: 30em;
   height: 35em;
   position: relative;
   border-radius: 0.5em;
-  /* box-shadow: 0 0.188em 1.5em rgb(156, 156, 156); */
+  box-shadow: 0 0.188em 1.5em rgb(156, 156, 156);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,45 +40,31 @@ justify-content: space-around;
 
 }
 
-h1 {
-  color: rgb(3, 45, 77);
-}
-hr {
-  color: rgb(3, 45, 77);
-}
-
 input[type=text]{
-  background-color: rgba(0,0,0,0);
   border-color: rgb(6, 106, 183);
   border-radius: 8px 8px 8px 8px;
-  border-width: 10%;
+  border-width: 0.25em;
   border-style: solid;
   /* outline-color: rgb(6, 106, 183); */
   height: 3em;
-  width: 40%;
-  /* bottom: -1.5em; */
+  width: 50%;
+  position: relative;
+  bottom: -3em;
 }
 
 
 input[type=password]{
-  background-color: rgba(0,0,0,0); 
   border-color: rgb(6, 106, 183);
   border-radius: 8px 8px 8px 8px;
-  border-width: 10%;
+  border-width: 0.25em;
   border-style: solid;
   /* outline-color: rgb(6, 106, 183); */
   height: 3em;
-  width: 40%;
-  position: relative;
-  top: -1.5em;
-}
-.line{
-  text-decoration: underline;
-  color: black;
+  width: 50%;
 }
 
 .login-btn {
-  width: 12em;
+  width: 40%;
   height: 3em;
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
@@ -103,7 +82,7 @@ input[type=password]{
 
 .check-btn {
   position: relative;
-  bottom: 2em;
+  bottom: 3em;
 }
 
 .check-btn input {
@@ -113,4 +92,3 @@ input[type=password]{
 .check-btn p {
   display:inline-block;
 }
-

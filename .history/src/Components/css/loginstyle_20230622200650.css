@@ -82,6 +82,7 @@ input[type=password]{
 .line{
   text-decoration: underline;
   color: black;
+  /* padding-bottom: 1px; */
 }
 
 .login-btn {

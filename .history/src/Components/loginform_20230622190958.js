@@ -7,9 +7,7 @@ const LoginForm = () => {
     <div className="page">
       <div className="cover">
         <img src={logo} alt="Logo Ipsum"></img>
-          <span className="line">
           <h1>Welcome</h1>
-          </span>
           <hr />
           <input type="text" placeholder="Username"></input>
           <input type="password" placeholder="Password"></input>  
