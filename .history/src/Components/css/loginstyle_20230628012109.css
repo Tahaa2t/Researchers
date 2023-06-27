@@ -66,6 +66,7 @@ input[type=text]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  /* flex: 1 1 200; */
   justify-content: space-evenly;
   margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
@@ -82,6 +83,7 @@ input[type=password]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  /* flex: 1 1 200; */
   justify-content: space-evenly;
   margin: 8px;
   /* outline-color: rgb(6, 106, 183); */

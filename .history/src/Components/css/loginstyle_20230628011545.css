@@ -66,8 +66,8 @@ input[type=text]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
   width: 240px;
@@ -82,11 +82,11 @@ input[type=password]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
-  width: 240px;
+  width: 280px;
   /* position: relative;
   top: -1.5em; */
 }
@@ -96,12 +96,11 @@ input[type=password]{
 }
 
 .login-btn {
-  width: 28%;
+  width: 12em;
   height: 3em;
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
   display: flex;
-  flex: 1 1 200;
   justify-content: center;
   align-items: center;
   transition: 0.5s;

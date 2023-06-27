@@ -35,14 +35,15 @@ display: flex;
 
 .cover {
   background-image: linear-gradient(rgba(178, 209, 233, 1), rgba(178, 209, 233, 0));
-  width: 50%;
+  width: 750px;
   height: 620px;
   position: relative;
   border-radius: 0.5em;
+  /* box-shadow: 0 0.188em 1.5em rgb(156, 156, 156); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 h1 {
@@ -52,12 +53,11 @@ h1 {
 .user-input {
   
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-evenly;
-  width: 80%;
-  height: 10%;
-  flex-wrap: wrap;
-  /* background-color: green; */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 8em;
+  background-color: green;
 }
 input[type=text]{
   background-color: rgba(0,0,0,0);
@@ -65,12 +65,9 @@ input[type=text]{
   border-radius: 8px 8px 8px 8px;
   border-width: 10%;
   border-style: solid;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
-  width: 240px;
+  /* width: 280px; */
   /* bottom: -1.5em; */
 }
 
@@ -81,12 +78,9 @@ input[type=password]{
   border-radius: 8px 8px 8px 8px;
   border-width: 10%;
   border-style: solid;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
-  width: 240px;
+  /*width: 40%; */
   /* position: relative;
   top: -1.5em; */
 }
@@ -96,12 +90,11 @@ input[type=password]{
 }
 
 .login-btn {
-  width: 28%;
+  width: 12em;
   height: 3em;
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
   display: flex;
-  flex: 1 1 200;
   justify-content: center;
   align-items: center;
   transition: 0.5s;

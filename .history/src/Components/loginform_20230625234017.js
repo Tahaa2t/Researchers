@@ -19,10 +19,8 @@ const LoginForm = () => {
         <span className="line">
         <h1>Welcome</h1>
         </span>
-        <div className="user-input">
-          <input type="text" placeholder="NU-ID"></input>
-          <input type="password" placeholder="Password"></input>
-        </div>
+        <input type="text" placeholder="NU-ID"></input>
+        <input type="password" placeholder="Password"></input>
         <div className="login-btn" onClick={popup}>LOGIN</div>
         
         <div className="check-btn">

@@ -66,8 +66,8 @@ input[type=text]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
   width: 240px;
@@ -82,8 +82,8 @@ input[type=password]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
   width: 240px;
@@ -101,7 +101,6 @@ input[type=password]{
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
   display: flex;
-  flex: 1 1 200;
   justify-content: center;
   align-items: center;
   transition: 0.5s;

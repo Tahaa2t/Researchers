@@ -13,6 +13,7 @@ const LoginForm = () => {
   }
 
   return(
+  <meta></meta>
     <div className="page">
       <div className="cover">
         <img src={logo} alt="Logo Ipsum"></img>

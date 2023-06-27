@@ -66,6 +66,7 @@ input[type=text]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+
   justify-content: space-evenly;
   margin: 8px;
   /* outline-color: rgb(6, 106, 183); */

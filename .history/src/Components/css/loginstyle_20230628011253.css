@@ -39,8 +39,10 @@ display: flex;
   height: 620px;
   position: relative;
   border-radius: 0.5em;
+  /* box-shadow: 0 0.188em 1.5em rgb(156, 156, 156); */
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-evenly;
 }
@@ -53,7 +55,8 @@ h1 {
   
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
   height: 10%;
   flex-wrap: wrap;
@@ -66,11 +69,11 @@ input[type=text]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
-  width: 240px;
+  width: 280px;
   /* bottom: -1.5em; */
 }
 
@@ -82,11 +85,11 @@ input[type=password]{
   border-width: 10%;
   border-style: solid;
   display: flex;
+  flex: 1 1 200;
   justify-content: space-evenly;
-  margin: 8px;
   /* outline-color: rgb(6, 106, 183); */
   height: 44px;
-  width: 240px;
+  width: 280px;
   /* position: relative;
   top: -1.5em; */
 }
@@ -96,12 +99,11 @@ input[type=password]{
 }
 
 .login-btn {
-  width: 28%;
+  width: 12em;
   height: 3em;
   background-color: rgb(3, 58, 101);
   color: rgb(243, 243, 243);
   display: flex;
-  flex: 1 1 200;
   justify-content: center;
   align-items: center;
   transition: 0.5s;

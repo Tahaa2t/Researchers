@@ -36,7 +36,7 @@ display: flex;
 .cover {
   background-image: linear-gradient(rgba(178, 209, 233, 1), rgba(178, 209, 233, 0));
   width: 50%;
-  height: 620px;
+  height: 80%;
   position: relative;
   border-radius: 0.5em;
   display: flex;
