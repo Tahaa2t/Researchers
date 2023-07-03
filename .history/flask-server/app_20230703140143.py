@@ -7,8 +7,8 @@ CORS(app)
 
 @app.route('/login', methods=['POST'])
 def login():
-    nuid = request.json['nuid']
-    password = request.json['password']
+    nuid = request['nuid']
+    password = request['password']
 
     if nuid == '19k1366' and password == 'password':
         return jsonify({'success': True, 'message': 'Login successful'})

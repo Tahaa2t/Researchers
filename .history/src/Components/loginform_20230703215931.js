@@ -36,7 +36,7 @@ const LoginForm = () => {
           password: password
         });
         console.log(response.data)
-        if(response.data.success == false){
+        if(!response.data.success){
           showPopup("login-popup")
           setTimeout(() => showPopup("hide"), 3000)
         }

@@ -20,8 +20,11 @@ const LoginForm = () => {
   //   )
   // }, [])
 
-  const [popupStyle, showPopup] = useState("hide");
+  // const [popupStyle, showPopup] = useState("hide");
   // const popup = () => {
+    
+    //   showPopup("login-popup")
+    //   setTimeout(() => showPopup("hide"), 3000)
     // }
     
     const [nuid, setNuid] = useState('');
@@ -36,10 +39,6 @@ const LoginForm = () => {
           password: password
         });
         console.log(response.data)
-        if(response.data.success == false){
-          showPopup("login-popup")
-          setTimeout(() => showPopup("hide"), 3000)
-        }
       }
       catch (error) {
         console.error("OOPSIE: ", error);
@@ -79,8 +78,6 @@ const LoginForm = () => {
           <input type="checkbox"></input>
           <p>Remember me?</p>
         </div>
-        
-        
         <div className={popupStyle}>
           <h3>LOGIN FAILED</h3>
           <p>username or password incorrect</p>

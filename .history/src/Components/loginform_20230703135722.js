@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import "./css/loginstyle.css" 
 import logo from "./logos/logoipsum.svg"
@@ -20,8 +20,11 @@ const LoginForm = () => {
   //   )
   // }, [])
 
-  const [popupStyle, showPopup] = useState("hide");
+  // const [popupStyle, showPopup] = useState("hide");
   // const popup = () => {
+    
+    //   showPopup("login-popup")
+    //   setTimeout(() => showPopup("hide"), 3000)
     // }
     
     const [nuid, setNuid] = useState('');
@@ -31,18 +34,14 @@ const LoginForm = () => {
       e.preventDefault();
 
       try{
-        const response = await axios.post('http://127.0.0.1:5000/login', {
+        const response = await axios.post('/login', {
           nuid: nuid,
           password: password
         });
         console.log(response.data)
-        if(response.data.success == false){
-          showPopup("login-popup")
-          setTimeout(() => showPopup("hide"), 3000)
-        }
       }
       catch (error) {
-        console.error("OOPSIE: ", error);
+        console.error("Error: ", error);
 
       }
     };
@@ -72,19 +71,18 @@ const LoginForm = () => {
           placeholder="Password"></input>
 
         </div>
+        {/* <div className="login-btn" onClick={popup}>LOGIN</div> */}
         
-        <button className="login-btn" onClick={handleSubmit}>LOGIN</button>
+        <div className="login-btn" onClick={handleSubmit}>LOGIN</div>
 
         <div className="check-btn">
           <input type="checkbox"></input>
           <p>Remember me?</p>
         </div>
-        
-        
-        <div className={popupStyle}>
+        {/* <div className={popupStyle}>
           <h3>LOGIN FAILED</h3>
           <p>username or password incorrect</p>
-        </div>
+        </div> */}
       
       
       </div>

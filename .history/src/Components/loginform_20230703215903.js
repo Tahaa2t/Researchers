@@ -36,10 +36,9 @@ const LoginForm = () => {
           password: password
         });
         console.log(response.data)
-        if(response.data.success == false){
-          showPopup("login-popup")
-          setTimeout(() => showPopup("hide"), 3000)
-        }
+        if(!response.data.success)
+        showPopup("login-popup")
+        setTimeout(() => showPopup("hide"), 3000)
       }
       catch (error) {
         console.error("OOPSIE: ", error);

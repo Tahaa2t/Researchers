@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
 import "./css/loginstyle.css" 
 import logo from "./logos/logoipsum.svg"
 // import Button from "react-bootstrap"
@@ -7,21 +6,24 @@ import logo from "./logos/logoipsum.svg"
 const LoginForm = () => {
 
   // Trying backend
-  // const [data, setData] = useState([{}])
+  const [data, setData] = useState([{}])
 
-  // useEffect(() => {
-  //   fetch("http://127.0.0.1:5000/members").then(
-  //     res => res.json()
-  //   ).then(
-  //     data => {
-  //       setData(data)
-  //       console.log(data)
-  //     }
-  //   )
-  // }, [])
+  useEffect(() => {
+    fetch("http://127.0.0.1:5000/members").then(
+      res => res.json()
+    ).then(
+      data => {
+        setData(data)
+        console.log(data)
+      }
+    )
+  }, [])
 
-  const [popupStyle, showPopup] = useState("hide");
+  // const [popupStyle, showPopup] = useState("hide");
   // const popup = () => {
+    
+    //   showPopup("login-popup")
+    //   setTimeout(() => showPopup("hide"), 3000)
     // }
     
     const [nuid, setNuid] = useState('');
@@ -31,18 +33,14 @@ const LoginForm = () => {
       e.preventDefault();
 
       try{
-        const response = await axios.post('http://127.0.0.1:5000/login', {
+        const response = await axios.post('http://127.0.0.1:5000', {
           nuid: nuid,
-          password: password
+          password: password,
         });
         console.log(response.data)
-        if(response.data.success == false){
-          showPopup("login-popup")
-          setTimeout(() => showPopup("hide"), 3000)
-        }
       }
       catch (error) {
-        console.error("OOPSIE: ", error);
+        console.error("Error: ", error);
 
       }
     };
@@ -56,13 +54,12 @@ const LoginForm = () => {
         <h1>Welcome</h1>
         </span>
         {/* inputs */}
-
         <div className="user-input">
           
           <input 
           type="text" 
           value={nuid} 
-          onChange={(e) => setNuid(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
           placeholder="NU-ID"></input>
 
           <input
@@ -72,19 +69,19 @@ const LoginForm = () => {
           placeholder="Password"></input>
 
         </div>
+        {/* <div className="login-btn" onClick={popup}>LOGIN</div> */}
         
-        <button className="login-btn" onClick={handleSubmit}>LOGIN</button>
-
+        <div className="login-btn" onClick={handleSubmit}>LOGIN</div>
+        
         <div className="check-btn">
           <input type="checkbox"></input>
           <p>Remember me?</p>
         </div>
-        
-        
-        <div className={popupStyle}>
+
+        {/* <div className={popupStyle}>
           <h3>LOGIN FAILED</h3>
           <p>username or password incorrect</p>
-        </div>
+        </div> */}
       
       
       </div>
