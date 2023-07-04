@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-boundry {
+  width: 10%;
+  height: fit-content;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: blue;
+  padding: 20px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

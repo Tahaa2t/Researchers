@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-boundry {
+  width: 10%;
+  height: fit-content;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 20% 20%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 16px;
+  justify-content: space-evenly;
+  margin: 2px;
+  
+}

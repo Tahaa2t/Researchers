@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-boundry {
+  width: 10%;
+  height: fit-content;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
