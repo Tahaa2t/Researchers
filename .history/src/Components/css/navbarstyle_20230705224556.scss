@@ -1,0 +1,49 @@
+
+$Background-color: #D0E8E1;
+$Button-border-color: #c1dad4;
+$Button-hover-color: #368775;
+
+// $hover-color:
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+nav {
+  background-image: linear-gradient(to right, $Background-color, $Background-color , rgba(0, 0, 0, 0));
+  width: 15%;
+  height: 100%;
+  // background-color: $Background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+}
+.btn {
+  background-color: transparent;
+  color: $Button-hover-color;
+  width: 94%;
+  text-align: center;
+  font-size: large;
+  border-radius: 0px 20px 20px 0px;
+  // border: 3px solid $Button-border-color;
+  border: none;
+  margin: 4px; 
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 1em 0 0 0 $Button-hover-color;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 12em 0 0 0 $Button-hover-color;
+  transition: 0.5s;
+  color: $Background-color;
+}
+
+

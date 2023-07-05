@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./css/navbarstyle.scss";
-import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   return (

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 223px;
+  height: 836px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+}
+.btn {
+  background-color: aquamarine;
+  width: 94%;
+  height: 200px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* .btn button {
+  background-color: blue;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 20% 20%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 16px;
+  justify-content: space-evenly;
+  margin: 2px;
+  
+} */

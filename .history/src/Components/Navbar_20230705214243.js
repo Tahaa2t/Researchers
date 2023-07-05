@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import "./css/navbarstyle.scss";
-import { FaBars, FaTimes } from 'react-icons/fa'
+import "./css/navbarstyle.css";
 
 const Navbar = () => {
   return (
@@ -12,19 +11,16 @@ const Navbar = () => {
           Home
         </button>
         <button className="btn home-btn" href="/#">
-          Transcripts
+          Home
         </button>
         <button className="btn home-btn" href="/#">
-          Assignments
+          Home
         </button>
         <button className="btn home-btn" href="/#">
-          Timetable
+          Home
         </button>
         <button className="btn home-btn" href="/#">
-          Courses
-        </button>
-        <button className="btn home-btn" href="/#">
-          Profile
+          Home
         </button>
         
 

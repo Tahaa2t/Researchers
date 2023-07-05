@@ -1,0 +1,46 @@
+
+$colors: (
+  background: #D0E8E1,
+  pulse: #ef6eae, 
+  close: #ff7f82, 
+  raise: #ffa260, 
+  up: #e4cb58, 
+  slide: #8fc866, 
+  offset: #19bc8b
+);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 15%;
+  height: 100%;
+  background-color: --background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+}
+.btn {
+  background-color: aquamarine;
+  width: 94%;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+  border: 3px solid blue;
+  margin: 4px; 
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 17em 0 0 0 pink;
+  transition: 0.5s;
+}
+
+

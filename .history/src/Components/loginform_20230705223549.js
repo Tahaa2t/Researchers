@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./css/loginstyle.css" 
 import logo from "./logos/logoipsum.svg"
+import Navbar from "./Navbar"
 // import Button from "react-bootstrap"
 // Trying backend
 // const [data, setData] = useState([{}])
@@ -91,7 +92,6 @@ const LoginForm = () => {
       
       </div>
     </div>
-  
   )
 }
 
