@@ -53,35 +53,7 @@ nav {
   background: transparent;
   border: none;
   outline: none;
-  color: $Button-hover-color;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-
-@media only screen and (max-width:1024px ){
-  .nav-btn {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  nav {
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(-100vh);
-
-  }
-  .btn:hover {
-    box-shadow: inset 50em 0 0 0 $Button-hover-color;
-  }
-
-  .responsive-nav {
-    transform: none;
-  }
+  color: blueviolet;
 }
 
 

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./css/navbarstyle.scss";
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { Button } from "bootstrap";
 
 const Navbar = () => {
@@ -17,6 +17,9 @@ const Navbar = () => {
 
   return (
     <section className="navbar-boundry">
+    <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
       <nav className="nav-setting" ref={navRef}>
         <button className="btn home-btn" href="/#">
           Home
@@ -40,9 +43,7 @@ const Navbar = () => {
           <FaTimes />
         </button> */}
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
-      </button>
+      
       
       
       

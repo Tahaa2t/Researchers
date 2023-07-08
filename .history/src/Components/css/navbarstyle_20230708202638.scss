@@ -53,13 +53,9 @@ nav {
   background: transparent;
   border: none;
   outline: none;
-  color: $Button-hover-color;
+  color: blueviolet;
   visibility: hidden;
   opacity: 0;
-  font-size: 1.8rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
 }
 
 
@@ -80,6 +76,7 @@ nav {
   }
 
   .responsive-nav {
+    transition: 0.5s;
     transform: none;
   }
 }

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./css/navbarstyle.scss";
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { Button } from "bootstrap";
 
 const Navbar = () => {
@@ -16,6 +16,7 @@ const Navbar = () => {
 
 
   return (
+    <header>
     <section className="navbar-boundry">
       <nav className="nav-setting" ref={navRef}>
         <button className="btn home-btn" href="/#">
@@ -49,6 +50,7 @@ const Navbar = () => {
       
       
     </section>
+    </header>
   )
 }
 
