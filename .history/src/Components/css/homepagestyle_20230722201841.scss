@@ -1,0 +1,89 @@
+
+$Text-hover-color: #D0E8E1;
+$Background-color: #20b3848c;
+$Button-border-color: #c1dad4;
+$Button-hover-color: #368775;
+
+// $hover-color:
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  // background-color: black;
+}
+// NAVBAR
+nav {
+  background-image: linear-gradient(to right, $Background-color, rgba(0, 0, 0, 0));
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+}
+.btn {
+  background-color: transparent;
+  color: $Button-hover-color;
+  width: 94%;
+  text-align: center;
+  font-size: large;
+  border-radius: 0px 20px 20px 0px;
+  // border: 3px solid $Button-border-color;
+  border: none;
+  margin: 4px; 
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 1em 0 0 0 $Button-hover-color;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 12em 0 0 0 $Button-hover-color;
+  transition: 0.5s;
+  color: $Text-hover-color;
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: $Button-hover-color;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+
+@media only screen and (max-width:1024px ){
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav {
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+
+  }
+  .btn:hover {
+    box-shadow: inset 50em 0 0 0 $Button-hover-color;
+  }
+
+  .responsive-nav {
+    transform: none;
+  }
+}
+
+
+// MAIN AREA
+
+

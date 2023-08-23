@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-screen{
+  display: flex;
+  // justify-content: center;
+  flex-direction: row;
+}
+
+.center-screen {
+  background-color: black;
+}

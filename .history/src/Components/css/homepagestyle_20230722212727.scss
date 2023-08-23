@@ -1,0 +1,26 @@
+
+@use "@material/card";
+
+@include card.core-styles;
+
+.my-card-content {
+  padding: 16px;
+}
+.my-card {
+  height: 350px;
+  width: 350px;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  // flex-direction: column;
+}
+
+.my-card__media {
+  background-image: url("src\Components\pics\placeholder image.jpg");
+}
+
+.personal-info{
+  display: flex;
+  height: 130px;
+}

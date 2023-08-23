@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-screen{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  // align-items: flex-end;
+}
+
+.center-screen {
+  width: 500px;
+  background-color: black;
+}
